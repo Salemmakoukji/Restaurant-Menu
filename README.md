@@ -40,7 +40,7 @@ Cairo Font: Integrated as a premium Arabic/Latin typeface to match the brand's e
 
 Clone the repository:
 
-git clone [https://github.com/yourusername/lor-digital-menu.git](https://github.com/yourusername/lor-digital-menu.git)
+git clone [https://github.com/Salemmakoukji/Restaurant-Menu.git](https://github.com/Salemmakoukji/Restaurant-Menu.git)
 
 
 Configure your Menu:
