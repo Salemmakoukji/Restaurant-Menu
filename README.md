@@ -1,8 +1,8 @@
-Restaurant Premium Digital Menu Showcase
+# Restaurant Premium Digital Menu Showcase
 
 A high-end, ultra-modern digital menu application custom-built for Restaurant Cafe & Restaurant. This showcase application is designed to provide a luxury visual experience for customers browsing on tablets or mobile devices, featuring sophisticated UI patterns and a fluid, brand-centric interface.
 
-🌟 Visual Identity & UX
+## 🌟 Visual Identity & UX
 
 This project is meticulously crafted to reflect the Restaurant brand identity:
 
@@ -14,7 +14,7 @@ Dynamic Backgrounds: Smoothly animated, floating "blobs" that move behind the gl
 
 Interactive Depth: Staggered entrance animations and hover effects that give the UI a tactile, high-quality response.
 
-✨ Key Features
+## ✨ Key Features
 
 Showcase Focused: Purposely designed for high-resolution item presentation, removing the clutter of ordering systems to focus on visual storytelling.
 
@@ -26,7 +26,7 @@ CSV-Powered Content: No database needed. Update categories, item names, prices, 
 
 Responsive Layout: Automatically transitions between a spacious, grid-based tablet view and a sleek, vertical mobile experience.
 
-🛠️ Technical Stack
+## 🛠️ Technical Stack
 
 HTML5 / CSS3: Semantic markup with heavy use of modern CSS features like backdrop-filter and keyframe animations.
 
@@ -36,17 +36,17 @@ Vanilla JavaScript (ES6+): Light and efficient logic for CSV parsing, dynamic DO
 
 Cairo Font: Integrated as a premium Arabic/Latin typeface to match the brand's elegance.
 
-🚀 Installation & Setup
+## 🚀 Installation & Setup
 
-Clone the repository:
+### Clone the repository:
 
 git clone [https://github.com/Salemmakoukji/Restaurant-Menu.git](https://github.com/Salemmakoukji/Restaurant-Menu.git)
 
 
-Configure your Menu:
+### Configure your Menu:
 Open menu.csv and populate it with your data. The columns should be: Main Category, Sub Category, Item Name, Price, and Description.
 
-Prepare Assets:
+### Prepare Assets:
 
 Place item images in ./images/menu/. (Naming convention: Item_Name.jpg).
 
@@ -54,10 +54,10 @@ Place your logo in ./images/logo.jpg.
 
 Ensure fonts are in the ./fonts/ directory for offline use.
 
-Deployment:
+### Deployment:
 Because the app uses fetch() to read the CSV, it must be hosted on a web server (IIS, Apache, Nginx) or opened via a local environment (like VS Code Live Server) to avoid CORS policy restrictions.
 
-📱 Performance
+## 📱 Performance
 
 Zero Dependencies: Once configured for offline, the app requires zero external API calls.
 
