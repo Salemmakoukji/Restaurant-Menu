@@ -1,121 +1,120 @@
-﻿Main Category,Sub Category,Item Name,Arabic Name,Description,Price
-APPETIZERS,Food,MOZZARELLA STICKS,أصابع موزاريلا,أصابع جبنة موزاريلا مقلية تقدم مع صوص المارينارا,900 SYP
-APPETIZERS,Food,GARLIC BREAD,خبز بالثوم,شرائح خبز فرنسي محمصة مع الزبدة والثوم والأعشاب,650 SYP
-APPETIZERS,Food,ONION RINGS,حلقات بصل,حلقات بصل مقرمشة تقدم مع صوص خاص,750 SYP
-APPETIZERS,Food,POUTIN,بوتن,بطاطس مقلية مغطاة بقطع الجبن ومرق اللحم الغني,1100 SYP
-APPETIZERS,Food,CHICKEN POP CORN,تشيكن بوب كورن,قطع دجاج صغيرة مقلية ومقرمشة تقدم مع صوص العسل والخردل,1200 SYP
-SALADS,Food,CAESAR,سلطة سيزر,خس روماني مع صوص السيزر وخبز التوست المحمص وجبنة البارميزان,1350 SYP
-SALADS,Food,GREEK,سلطة يونانية,مكعبات خيار وطماطم وبصل مع جبنة فيتا وزيتون وأوريغانو,1250 SYP
-SALADS,Food,ROCCA,سلطة جرجير,أوراق الجرجير الطازجة مع الرمان والجوز ودبس الرمان,1050 SYP
-SALADS,Food,PASTA,سلطة مكرونة,باستا باردة مع الخضار الملونة والزيتون والصوص الإيطالي,1200 SYP
-SALADS,Food,RANCH,سلطة رانش,مزيج من الخضار الطازجة مع صوص الرانش الغني,1250 SYP
-SANDWICHES,Food,STEAK BLAJIN,ستيك بلاجين,شرائح ستيك لحم طرية مع الخضار المشوية وصوص خاص بخبز البلاجين,1800 SYP
-SANDWICHES,Food,MEXICANO BLAJIN,مكسيكانو بلاجين,دجاج متبل على الطريقة المكسيكية مع الفلفل والبصل في خبز البلاجين,1650 SYP
-SANDWICHES,Food,CHICKEN BLAJIN,دجاج بلاجين,صدور دجاج مشوية مع المايونيز والخس في خبز البلاجين,1550 SYP
-SANDWICHES,Food,FRIED CHICKEN,دجاج مقلي,قطع دجاج مقلية ذهبية مع الخس والمايونيز والجبنة,1500 SYP
-SANDWICHES,Food,CHEESY TAWOOK,طاووق بالجبنة,شيش طاووق مشوي مع الثومية وكمية وافرة من الجبنة الذائبة,1700 SYP
-SANDWICHES,Food,CLUB SANDWICH,كلوب ساندويتش,طبقات من التوست المحمص مع الدجاج والبيض والجبنة والخضار,1850 SYP
-MANAKISH,Food,CHEESE,مناقيش جبنة,عجينة طازجة مغطاة بمزيج من الأجبان الفاخرة,600 SYP
-MANAKISH,Food,KASHKAVAL CHEESE,مناقيش قشقوان,عجينة مغطاة بجبنة القشقوان الغنية,750 SYP
-MANAKISH,Food,ZAATAR,مناقيش زعتر,زعتر بلدي مع زيت الزيتون الصافي,350 SYP
-MANAKISH,Food,LABNEH,مناقيش لبنة,لبنة طازجة مع زيت الزيتون والخضار,500 SYP
-MANAKISH,Food,CHILI,مناقيش محمرة,خلطة الفلفل الأحمر الحار مع البصل والأعشاب,450 SYP
-MANAKISH,Food,CHILI CHEESE,مناقيش محمرة بالجبنة,خلطة المحمرة مع طبقة من الجبنة الذائبة,650 SYP
-MANAKISH,Food,OLIVES,مناقيش زيتون,عجينة مغطاة بشرائح الزيتون الأخضر والأسود,500 SYP
-MANAKISH,Food,KURDIE,مناقيش كردية,مناقيش محضرة على الطريقة الكردية التقليدية,800 SYP
-MANAKISH,Food,HABASH KASHKAVAL,حبش وقشقوان,شرائح الحبش المدخن مع جبنة القشقوان,950 SYP
-MANAKISH,Food,SUJOK KASHKAVAL,سجق وقشقوان,سجق متبل مع جبنة القشقوان الذائبة,950 SYP
-PIZZA,Food,MARGHERITA,بيتزا مارغريتا,صلصة طماطم مع جبنة موزاريلا وأوريغانو,1500 SYP
-PIZZA,Food,VEGGIE,بيتزا خضار,صلصة طماطم مع فلفل وفطر وزيتون وذرة,1700 SYP
-PIZZA,Food,MUSHROOMS,بيتزا فطر,كمية مضاعفة من الفطر الطازج مع الجبنة والصلصة,1650 SYP
-PIZZA,Food,FOUR SEASON,بيتزا الفصول الأربعة,"مقسمة لأربعة أقسام بمكونات مختلفة (خضار، أجبان، لحوم، فطر)",1950 SYP
-PIZZA,Food,SUJOK,بيتزا سجق,صلصة طماطم مع قطع السجق المتبل والجبنة,1850 SYP
-PIZZA,Food,PEPPERONI,بيتزا ببروني,شرائح الببروني البقري مع جبنة الموزاريلا والصلصة,1800 SYP
-PIZZA,Food,MIXED MEATS,بيتزا مشكل لحوم,مزيج من اللحوم المفرومة والسجق والببروني,2100 SYP
-SOUPS,Food,MUSHROOM,شوربة فطر,شوربة الفطر الكريمية الغنية بالأعشاب,900 SYP
-SOUPS,Food,ONION,شوربة بصل,شوربة البصل الفرنسية الكلاسيكية,800 SYP
-SOUPS,Food,CORN,شوربة ذرة,شوربة الذرة الحلوة مع الكريمة,800 SYP
-MAIN COURSE,Food,CORDON BLEU,كوردون بلو,صدر دجاج محشو بالجبنة والحبش ومدخن ومقلي,2400 SYP
-MAIN COURSE,Food,CHICKEN ROLLS,رولات الدجاج,لفائف الدجاج المحشوة بالخضار والجبنة,2300 SYP
-MAIN COURSE,Food,CHICKEN CASHEW,دجاج بالكاجو,قطع دجاج مطبوخة مع الخضار والكاجو المحمص,2550 SYP
-MAIN COURSE,Food,CHICKEN A LA CEP,دجاج آ لا سيب,دجاج مطهو بصلصة الفطر البري الفاخرة,2700 SYP
-MAIN COURSE,Food,CHICKEN BREAST,صدر دجاج,صدور دجاج مشوية تقدم مع خضار سوتيه وبطاطس مهروسة,2150 SYP
-MAIN COURSE,Food,CHICKEN ROSEMARY,دجاج بالروزماري,دجاج متبل بإكليل الجبل والثوم ومشوي بدقة,2250 SYP
-MAIN COURSE,Food,CHICKEN BLANCH,دجاج بلانش,دجاج مطهو بصلصة بيضاء كريمية خفيفة,2300 SYP
-MAIN COURSE,Food,CHICKEN STROGANOFF,ستروغانوف الدجاج,شرائح دجاج مع الفطر والكريمة تقدم مع الأرز,2450 SYP
-MAIN COURSE,Food,BEEF STROGANOFF,ستروغانوف اللحم,شرائح لحم بقر مع الفطر والكريمة تقدم مع الأرز,2750 SYP
-MAIN COURSE,Food,ESCALOP L'OR,إسكالوب لور,إسكالوب دجاج مقلي على طريقة لور الخاصة,2400 SYP
-MAIN COURSE,Food,STEAK POIVRE,ستيك بويفر,ستيك لحم بقري فاخر مع صلصة الفلفل الأسود,3300 SYP
-MAIN COURSE,Food,STEAK MUSHROOM,ستيك فطر,ستيك لحم بقري فاخر مع صلصة الفطر الكريمية,3300 SYP
-MAIN COURSE,Food,ROSEMARY FISH FILLET,فيليه سمك بالروزماري,فيليه سمك مشوي مع نكهة الروزماري والليمون,2850 SYP
-MAIN COURSE,Food,BEEF MUSHROOM,لحم بالفطر,لحم مقطع مطهو مع الفطر والصوص البني,2700 SYP
-MAIN COURSE,Food,MEXICANO,مكسيكانو,طبق مكسيكي حار من اللحم أو الدجاج مع الفلفل والبصل,2450 SYP
-MAIN COURSE,Food,FAJITA,فاهيتا,طبق فاهيتا يقدم ساخناً مع التورتيلا والصوصات الجانبية,2550 SYP
-MAIN COURSE,Food,CRISPY,كرسبي,قطع دجاج مقلية شديدة القرمشة تقدم مع البطاطس,2150 SYP
-HOT BEVERAGES,Drinks,"ESPRESSO (SINGLE, DOUBLE, NESTLE)","اسبريسو (سنجل، دبل، نستله)",قهوة مركزة غنية محضرة من أجود أنواع البن,450 SYP
-HOT BEVERAGES,Drinks,ESPRESSO CON PANNA,اسبريسو كون بانا,اسبريسو مغطى بطبقة من الكريمة المخفوقة,600 SYP
-HOT BEVERAGES,Drinks,ESPRESSO MACCHIATO,اسبريسو ماكياتو,اسبريسو مع لمسة من رغوة الحليب,500 SYP
-HOT BEVERAGES,Drinks,ESPRESSO PISTACHIO,اسبريسو بستاشيو,اسبريسو ممزوج بنكهة الفستق الحلبي,650 SYP
-HOT BEVERAGES,Drinks,"CAFE LATTE (MOCHA, CARAMEL, BOUNTY)","كافيه لاتيه (موخا، كراميل، باونتي)",قهوة مع حليب مبخر ونكهات متنوعة,800 SYP
-HOT BEVERAGES,Drinks,SPANISH LATTE,سبانش لاتيه,لاتيه ممزوج بالحليب المكثف المحلى,900 SYP
-HOT BEVERAGES,Drinks,CAPPUCCINO,كابتشينو,توازن مثالي بين الاسبريسو والحليب والرغوة,750 SYP
-HOT BEVERAGES,Drinks,MOCHACCINO,موكاشينو,مزيج من الاسبريسو والشوكولاتة والحليب المبخر,800 SYP
-HOT BEVERAGES,Drinks,"HOT CHOCOLATE (DARK, WHITE, CAKE)","هوت شوكلت (داكن، أبيض، كيك)",شوكولاتة ساخنة غنية بمختلف النكهات,800 SYP
-HOT BEVERAGES,Drinks,3 IN 1,3 في 1,قهوة سريعة التحضير مع مبيض وسكر,450 SYP
-HOT BEVERAGES,Drinks,2 IN 1,2 في 1,قهوة سريعة التحضير مع مبيض بدون سكر,450 SYP
-HOT BEVERAGES,Drinks,FLAVORED TEA,شاي منكه,شاي أسود أو أخضر بنكهات الفواكه,450 SYP
-HOT BEVERAGES,Drinks,HERBAL TEA,شاي أعشاب,"مجموعة متنوعة من الأعشاب المهدئة (بابونج، نعناع، زهورات)",500 SYP
-HOT BEVERAGES,Drinks,"SAHLAB (REGULAR, CHOCOLATE)","سحلب (سادة، شوكولاتة)",مشروب السحلب الشتوي التقليدي مع المكسرات والقرفة,750 SYP
-HOT BEVERAGES,Drinks,NESCAFE BLACK,نسكافيه بلاك,قهوة نسكافيه سوداء كلاسيكية,450 SYP
-SMOOTHIES,Drinks,BANANA MILK,سموذي موز بالحليب,مزيج مثلج من الموز والحليب الطازج,900 SYP
-SMOOTHIES,Drinks,STRAWBERRY,سموذي فراولة,سموذي فراولة منعش ومثلج,950 SYP
-SMOOTHIES,Drinks,OATS AND HONEY,سموذي شوفان وعسل,مشروب صحي ومشبع من الشوفان والعسل والحليب,1100 SYP
-SMOOTHIES,Drinks,SUMMER FRUITS,سموذي فواكه صيفية,مزيج من فواكه الموسم الصيفية المنعشة,1050 SYP
-JUICES,Drinks,ORANGE,عصير برتقال,عصير برتقال طبيعي طازج,800 SYP
-JUICES,Drinks,PINEAPPLE,عصير أناناس,عصير أناناس طازج ومنعش,900 SYP
-JUICES,Drinks,STRAWBERRY,عصير فراولة,عصير فراولة طبيعي محضّر يومياً,900 SYP
-JUICES,Drinks,LEMONADE,ليموناضة,عصير ليمون طازج مع النعناع أو سادة,750 SYP
-JUICES,Drinks,POMEGRANATE,عصير رمان,عصير رمان طبيعي غني بالفوائد,1100 SYP
-JUICES,Drinks,GRAPEFRUIT,عصير جريب فروت,عصير جريب فروت طازج بنكهة حمضية مميزة,900 SYP
-JUICES,Drinks,WATERMELON,عصير بطيخ,عصير بطيخ بارد ومثالي للصيف,900 SYP
-JUICES,Drinks,MELON,عصير شمام,عصير شمام طازج وحلو المذاق,900 SYP
-JUICES,Drinks,MANGO,عصير مانجو,عصير مانجو طبيعي كثيف القوام,950 SYP
-JUICES,Drinks,PEACH,عصير دراق,عصير دراق طازج ومنعش,950 SYP
-CREPE,Sweets,CHOCOLATE - FRUITS - CRÈME PATISSIÈRE,كريب شوكولاتة وفواكه وكريمة,عجينة كريب رقيقة محشوة بالشوكولاتة والفواكه والكريمة,1500 SYP
-CREPE,Sweets,SUSHI - FETTUCCINE - DUBAI CHOCOLATE - KUNAFA,كريب سوشي وفيتوتشيني وشوكولاتة دبي,كريب مقطع بطرق فنية مع نكهات دبي والشوكولاتة المبتكرة,2100 SYP
-SWEET SALADS,Sweets,KINDER - TWIX - GALAXY - KITKAT - OREO - BROWNIES - FRUITS - NUTELLA,سلطات حلوة (كيندر..),مزيج من الفواكه وقطع الحلويات الشهيرة مع صوص الشوكولاتة,2250 SYP
-ICED DRINKS,Drinks,"ICE COFFEE (OREO, CHOCOLATE, MOCHA)","أيس كوفي (أوريو، شوكولاتة، موكا)",قهوة باردة ممزوجة بالثلج والنكهات المفضلة,1050 SYP
-ICED DRINKS,Drinks,ICE CARAMEL LATTE,أيس كراميل لاتيه,لاتيه بارد مع نكهة الكراميل الغنية والثلج,1050 SYP
-ICED DRINKS,Drinks,ICE CHOCOLATE,أيس شوكلت,شوكولاتة باردة مع حليب وثلج وكريمة,950 SYP
-ICED DRINKS,Drinks,VIRGIN MOJITO,فيرجن موهيتو,مشروب غازي منعش مع النعناع والليمون ونكهات اختيارية,950 SYP
-ICED DRINKS,Drinks,ICE TEA FRESH,أيس تي فريش,شاي بارد منعش بنكهة الليمون أو الخوخ,800 SYP
-ICED DRINKS,Drinks,VIRGIN PINA COLADA,فيرجن بينا كولادا,مزيج الأناناس وجوز الهند المنعش,1100 SYP
-MILKSHAKES,Drinks,CHOCOLATE,ميلك شيك شوكولاتة,مخفوق الحليب مع الأيس كريم والشوكولاتة,1100 SYP
-MILKSHAKES,Drinks,STRAWBERRY,ميلك شيك فراولة,مخفوق الحليب مع الأيس كريم والفراولة الطازجة,1100 SYP
-MILKSHAKES,Drinks,VANILLA,ميلك شيك فانيلا,مخفوق الحليب مع أيس كريم الفانيلا الفاخرة,1050 SYP
-MILKSHAKES,Drinks,CHEESECAKE,ميلك شيك تشيز كيك,مخفوق الحليب بنكهة التشيز كيك الكريمية,1250 SYP
-MILKSHAKES,Drinks,OREO CHEESECAKE,ميلك شيك أوريو تشيز كيك,مخفوق الحليب مع قطع الأوريو وطعم التشيز كيك,1350 SYP
-MILKSHAKES,Drinks,COOKIES,ميلك شيك كوكيز,مخفوق الحليب مع قطع الكوكيز المقرمشة,1200 SYP
-MILKSHAKES,Drinks,MOCHA,ميلك شيك موكا,مخفوق الحليب بنكهة القهوة والشوكولاتة,1200 SYP
-FRAPPE,Drinks,CHOCOLATE,فرابيه شوكولاتة,مشروب قهوة مثلج مع صوص الشوكولاتة والكريمة,1200 SYP
-FRAPPE,Drinks,CARAMEL MOCHA,فرابيه كراميل موكا,مزيج مثلج من القهوة والكراميل والشوكولاتة,1250 SYP
-FRAPPE,Drinks,OREO,فرابيه أوريو,مشروب مثلج غني بقطع بسكويت أوريو,1250 SYP
-FRAPPE,Drinks,STRAWBERRY,فرابيه فراولة,مزيج مثلج منعش بنكهة الفراولة,1200 SYP
-FRAPPE,Drinks,CHEESECAKE,فرابيه تشيز كيك,فرابيه بنكهة التشيز كيك الغنية,1350 SYP
-FRAPPE,Drinks,LOTUS,فرابيه لوتس,فرابيه بنكهة بسكويت اللوتس والكراميل,1400 SYP
-FRAPPE,Drinks,PISTACHIO,فرابيه بستاشيو,فرابيه مميز بنكهة الفستق الحلبي الطبيعي,1500 SYP
-SWEETS,Sweets,FONDANT,فوندان,كيك الشوكولاتة الدافئ بقلب سائل يقدم مع الأيس كريم,1350 SYP
-SWEETS,Sweets,BROWNIES,براونيز,قطع براونيز الشوكولاتة الغنية والمحشوة بالجوز,1100 SYP
-SWEETS,Sweets,ICE CREAM CAKE,كيك أيس كريم,طبقات من الكيك والأيس كريم بنكهات متنوعة,1400 SYP
-SWEETS,Sweets,WAFFLE,وافل,عجينة الوافل المقرمشة تقدم مع الصوصات والفواكه,1350 SYP
-SWEETS,Sweets,TIRAMISU,تيراميسو,الحلوى الإيطالية الشهيرة بنكهة القهوة والماسكاربوني,1250 SYP
-SWEETS,Sweets,CHEESECAKE WAFFLE,وافل تشيز كيك,وافل مغطى بطبقة من كريمة التشيز كيك اللذيذة,1650 SYP
-SWEETS,Sweets,KINDER FAKHARA,كيندر فخارة,حلوى الكيندر المذابة في فخارة دافئة مع الكيك,1800 SYP
-CUPS,Sweets,CHOCOLATE,كاسات شوكولاتة,كاسات طبقات من الشوكولاتة والكريمة,950 SYP
-CUPS,Sweets,STRAWBERRY,كاسات فراولة,كاسات حلوى بطعم الفراولة والكريمة,950 SYP
-CUPS,Sweets,KINDER,كاسات كيندر,كاسات مميزة بنكهة شوكولاتة كيندر,1100 SYP
-CUPS,Sweets,GALAXY,كاسات جالاكسي,كاسات غنية بطعم شوكولاتة جالاكسي,1100 SYP
-CUPS,Sweets,CRUNCHY,كاسات كرانشي,كاسات حلوى مع قطع مقرمشة وشوكولاتة,1050 SYP
-CUPS,Sweets,CHOCOLATE MOU,شوكولاتة مو,حلوى الشوكولاتة الكريمية التقليدية الباردة,1200 SYP
-NEW INS,Sweets,L'OR CROISSANT,كرواسون لور,كرواسون طازج بحشوات لور الخاصة والمبتكرة,1050 SYP
-NEW INS,Sweets,HALAWA CREAM,حلاوة بالقشطة,مزيج تقليدي من الحلاوة والقشطة بلمسة عصرية,950 SYP
+Main Category,Item Name,Item Name AR,Price,Description
+APPETIZERS,GARLIC BREAD,خبز بالثوم,,شرائح خبز فرنسي محمصة مع الزبدة والثوم والأعشاب
+APPETIZERS,ONION RINGS,حلقات بصل,,حلقات بصل مقرمشة تقدم مع صوص خاص
+APPETIZERS,POUTIN,بوتن,,بطاطس مقلية مغطاة بقطع الجبن ومرق اللحم الغني
+APPETIZERS,CHICKEN POP CORN,تشيكن بوب كورن,,قطع دجاج صغيرة مقلية ومقرمشة تقدم مع صوص العسل والخردل
+SALADS,CAESAR,سلطة سيزر,500 SYP,خس روماني مع صوص السيزر وخبز التوست المحمص وجبنة البارميزان
+SALADS,GREEK,سلطة يونانية,,مكعبات خيار وطماطم وبصل مع جبنة فيتا وزيتون وأوريغانو
+SALADS,ROCCA,سلطة جرجير,,أوراق الجرجير الطازجة مع الرمان والجوز ودبس الرمان
+SALADS,PASTA,سلطة مكرونة,,باستا باردة مع الخضار الملونة والزيتون والصوص الإيطالي
+SALADS,RANCH,سلطة رانش,,مزيج من الخضار الطازجة مع صوص الرانش الغني
+SANDWICHES,STEAK BLAJIN,ستيك بلاجين,,شرائح ستيك لحم طرية مع الخضار المشوية وصوص خاص بخبز البلاجين
+SANDWICHES,MEXICANO BLAJIN,مكسيكانو بلاجين,,دجاج متبل على الطريقة المكسيكية مع الفلفل والبصل في خبز البلاجين
+SANDWICHES,CHICKEN BLAJIN,دجاج بلاجين,,صدور دجاج مشوية مع المايونيز والخس في خبز البلاجين
+SANDWICHES,FRIED CHICKEN,دجاج مقلي,,قطع دجاج مقلية ذهبية مع الخس والمايونيز والجبنة
+SANDWICHES,CHEESY TAWOOK,طاووق بالجبنة,,شيش طاووق مشوي مع الثومية وكمية وافرة من الجبنة الذائبة
+SANDWICHES,CLUB SANDWICH,كلوب ساندويتش,,طبقات من التوست المحمص مع الدجاج والبيض والجبنة والخضار
+MANAKISH,CHEESE,مناقيش جبنة,,عجينة طازجة مغطاة بمزيج من الأجبان الفاخرة
+MANAKISH,KASHKAVAL CHEESE,مناقيش قشقوان,,عجينة مغطاة بجبنة القشقوان الغنية
+MANAKISH,ZAATAR,مناقيش زعتر,,زعتر بلدي مع زيت الزيتون الصافي
+MANAKISH,LABNEH,مناقيش لبنة,,لبنة طازجة مع زيت الزيتون والخضار
+MANAKISH,CHILI,مناقيش محمرة,,خلطة الفلفل الأحمر الحار مع البصل والأعشاب
+MANAKISH,CHILI CHEESE,مناقيش محمرة بالجبنة,,خلطة المحمرة مع طبقة من الجبنة الذائبة
+MANAKISH,OLIVES,مناقيش زيتون,,عجينة مغطاة بشرائح الزيتون الأخضر والأسود
+MANAKISH,KURDIE,مناقيش كردية,,مناقيش محضرة على الطريقة الكردية التقليدية
+MANAKISH,HABASH KASHKAVAL,حبش وقشقوان,,شرائح الحبش المدخن مع جبنة القشقوان
+MANAKISH,SUJOK KASHKAVAL,سجق وقشقوان,,سجق متبل مع جبنة القشقوان الذائبة
+PIZZA,MARGHERITA,بيتزا مارغريتا,,صلصة طماطم مع جبنة موزاريلا وأوريغانو
+PIZZA,VEGGIE,بيتزا خضار,,صلصة طماطم مع فلفل وفطر وزيتون وذرة
+PIZZA,MUSHROOMS,بيتزا فطر,,كمية مضاعفة من الفطر الطازج مع الجبنة والصلصة
+PIZZA,FOUR SEASON,بيتزا الفصول الأربعة,,"مقسمة لأربعة أقسام بمكونات مختلفة (خضار، أجبان، لحوم، فطر)"
+PIZZA,SUJOK,بيتزا سجق,,صلصة طماطم مع قطع السجق المتبل والجبنة
+PIZZA,PEPPERONI,بيتزا ببروني,,شرائح الببروني البقري مع جبنة الموزاريلا والصلصة
+PIZZA,MIXED MEATS,بيتزا مشكل لحوم,,مزيج من اللحوم المفرومة والسجق والببروني
+SOUPS,MUSHROOM,شوربة فطر,,شوربة الفطر الكريمية الغنية بالأعشاب
+SOUPS,ONION,شوربة بصل,,شوربة البصل الفرنسية الكلاسيكية
+SOUPS,CORN,شوربة ذرة,,شوربة الذرة الحلوة مع الكريمة
+MAIN COURSE,CORDON BLEU,كوردون بلو,,صدر دجاج محشو بالجبنة والحبش ومدخن ومقلي
+MAIN COURSE,CHICKEN ROLLS,رولات الدجاج,,لفائف الدجاج المحشوة بالخضار والجبنة
+MAIN COURSE,CHICKEN CASHEW,دجاج بالكاجو,,قطع دجاج مطبوخة مع الخضار والكاجو المحمص
+MAIN COURSE,CHICKEN A LA CEP,دجاج آ لا سيب,,دجاج مطهو بصلصة الفطر البري الفاخرة
+MAIN COURSE,CHICKEN BREAST,صدر دجاج,,صدور دجاج مشوية تقدم مع خضار سوتيه وبطاطس مهروسة
+MAIN COURSE,CHICKEN ROSEMARY,دجاج بالروزماري,,دجاج متبل بإكليل الجبل والثوم ومشوي بدقة
+MAIN COURSE,CHICKEN BLANCH,دجاج بلانش,,دجاج مطهو بصلصة بيضاء كريمية خفيفة
+MAIN COURSE,CHICKEN STROGANOFF,ستروغانوف الدجاج,,شرائح دجاج مع الفطر والكريمة تقدم مع الأرز
+MAIN COURSE,BEEF STROGANOFF,ستروغانوف اللحم,,شرائح لحم بقر مع الفطر والكريمة تقدم مع الأرز
+MAIN COURSE,ESCALOP L'OR,إسكالوب لور,,إسكالوب دجاج مقلي على طريقة لور الخاصة
+MAIN COURSE,STEAK POIVRE,ستيك بويفر,,ستيك لحم بقري فاخر مع صلصة الفلفل الأسود
+MAIN COURSE,STEAK MUSHROOM,ستيك فطر,,ستيك لحم بقري فاخر مع صلصة الفطر الكريمية
+MAIN COURSE,ROSEMARY FISH FILLET,فيليه سمك بالروزماري,,فيليه سمك مشوي مع نكهة الروزماري والليمون
+MAIN COURSE,BEEF MUSHROOM,لحم بالفطر,,لحم مقطع مطهو مع الفطر والصوص البني
+MAIN COURSE,MEXICANO,مكسيكانو,,طبق مكسيكي حار من اللحم أو الدجاج مع الفلفل والبصل
+MAIN COURSE,FAJITA,فاهيتا,,طبق فاهيتا يقدم ساخناً مع التورتيلا والصوصات الجانبية
+MAIN COURSE,CRISPY,كرسبي,,قطع دجاج مقلية شديدة القرمشة تقدم مع البطاطس
+HOT BEVERAGES,"ESPRESSO (SINGLE, DOUBLE, NESTLE)",
+HOT BEVERAGES,ESPRESSO CON PANNA,اسبريسو كون بانا,,اسبريسو مغطى بطبقة من الكريمة المخفوقة
+HOT BEVERAGES,ESPRESSO MACCHIATO,اسبريسو ماكياتو,,اسبريسو مع لمسة من رغوة الحليب
+HOT BEVERAGES,ESPRESSO PISTACHIO,اسبريسو بستاشيو,,اسبريسو ممزوج بنكهة الفستق الحلبي
+HOT BEVERAGES,"CAFE LATTE (MOCHA, CARAMEL, BOUNTY)",
+HOT BEVERAGES,SPANISH LATTE,سبانش لاتيه,,لاتيه ممزوج بالحليب المكثف المحلى
+HOT BEVERAGES,CAPPUCCINO,كابتشينو,,توازن مثالي بين الاسبريسو والحليب والرغوة
+HOT BEVERAGES,MOCHACCINO,موكاشينو,,مزيج من الاسبريسو والشوكولاتة والحليب المبخر
+HOT BEVERAGES,"HOT CHOCOLATE (DARK, WHITE, CAKE)",
+HOT BEVERAGES,3 IN 1,3 في 1,,قهوة سريعة التحضير مع مبيض وسكر
+HOT BEVERAGES,2 IN 1,2 في 1,,قهوة سريعة التحضير مع مبيض بدون سكر
+HOT BEVERAGES,FLAVORED TEA,شاي منكه,,شاي أسود أو أخضر بنكهات الفواكه
+HOT BEVERAGES,HERBAL TEA,شاي أعشاب,,"مجموعة متنوعة من الأعشاب المهدئة (بابونج، نعناع، زهورات)"
+HOT BEVERAGES,"SAHLAB (REGULAR, CHOCOLATE)","سحلب (سادة، شوكولاتة)",
+HOT BEVERAGES,NESCAFE BLACK,نسكافيه بلاك,,قهوة نسكافيه سوداء كلاسيكية
+SMOOTHIES,BANANA MILK,سموذي موز بالحليب,,مزيج مثلج من الموز والحليب الطازج
+SMOOTHIES,STRAWBERRY,سموذي فراولة,,سموذي فراولة منعش ومثلج
+SMOOTHIES,OATS AND HONEY,سموذي شوفان وعسل,,مشروب صحي ومشبع من الشوفان والعسل والحليب
+SMOOTHIES,SUMMER FRUITS,سموذي فواكه صيفية,,مزيج من فواكه الموسم الصيفية المنعشة
+JUICES,ORANGE,عصير برتقال,,عصير برتقال طبيعي طازج
+JUICES,PINEAPPLE,عصير أناناس,,عصير أناناس طازج ومنعش
+JUICES,STRAWBERRY,عصير فراولة,,عصير فراولة طبيعي محضّر يومياً
+JUICES,LEMONADE,ليموناضة,,عصير ليمون طازج مع النعناع أو سادة
+JUICES,POMEGRANATE,عصير رمان,,عصير رمان طبيعي غني بالفوائد
+JUICES,GRAPEFRUIT,عصير جريب فروت,,عصير جريب فروت طازج بنكهة حمضية مميزة
+JUICES,WATERMELON,عصير بطيخ,,عصير بطيخ بارد ومثالي للصيف
+JUICES,MELON,عصير شمام,,عصير شمام طازج وحلو المذاق
+JUICES,MANGO,عصير مانجو,,عصير مانجو طبيعي كثيف القوام
+JUICES,PEACH,عصير دراق,,عصير دراق طازج ومنعش
+CREPE,CHOCOLATE - FRUITS - CRÈME PATISSIÈRE,كريب شوكولاتة وفواكه وكريمة,,عجينة كريب رقيقة محشوة بالشوكولاتة والفواكه والكريمة
+CREPE,SUSHI - FETTUCCINE - DUBAI CHOCOLATE - KUNAFA,كريب سوشي وفيتوتشيني وشوكولاتة دبي,,كريب مقطع بطرق فنية مع نكهات دبي والشوكولاتة المبتكرة
+SWEET SALADS,KINDER - TWIX - GALAXY - KITKAT - OREO - BROWNIES - FRUITS - NUTELLA,سلطات حلوة (كيندر..),,مزيج من الفواكه وقطع الحلويات الشهيرة مع صوص الشوكولاتة
+ICED DRINKS,"ICE COFFEE (OREO, CHOCOLATE, MOCHA)",
+ICED DRINKS,ICE CARAMEL LATTE,أيس كراميل لاتيه,,لاتيه بارد مع نكهة الكراميل الغنية والثلج
+ICED DRINKS,ICE CHOCOLATE,أيس شوكلت,,شوكولاتة باردة مع حليب وثلج وكريمة
+ICED DRINKS,VIRGIN MOJITO,فيرجن موهيتو,,مشروب غازي منعش مع النعناع والليمون ونكهات اختيارية
+ICED DRINKS,ICE TEA FRESH,أيس تي فريش,,شاي بارد منعش بنكهة الليمون أو الخوخ
+ICED DRINKS,VIRGIN PINA COLADA,فيرجن بينا كولادا,,مزيج الأناناس وجوز الهند المنعش
+MILKSHAKES,CHOCOLATE,ميلك شيك شوكولاتة,,مخفوق الحليب مع الأيس كريم والشوكولاتة
+MILKSHAKES,STRAWBERRY,ميلك شيك فراولة,,مخفوق الحليب مع الأيس كريم والفراولة الطازجة
+MILKSHAKES,VANILLA,ميلك شيك فانيلا,,مخفوق الحليب مع أيس كريم الفانيلا الفاخرة
+MILKSHAKES,CHEESECAKE,ميلك شيك تشيز كيك,,مخفوق الحليب بنكهة التشيز كيك الكريمية
+MILKSHAKES,OREO CHEESECAKE,ميلك شيك أوريو تشيز كيك,,مخفوق الحليب مع قطع الأوريو وطعم التشيز كيك
+MILKSHAKES,COOKIES,ميلك شيك كوكيز,,مخفوق الحليب مع قطع الكوكيز المقرمشة
+MILKSHAKES,MOCHA,ميلك شيك موكا,,مخفوق الحليب بنكهة القهوة والشوكولاتة
+FRAPPE,CHOCOLATE,فرابيه شوكولاتة,,مشروب قهوة مثلج مع صوص الشوكولاتة والكريمة
+FRAPPE,CARAMEL MOCHA,فرابيه كراميل موكا,,مزيج مثلج من القهوة والكراميل والشوكولاتة
+FRAPPE,OREO,فرابيه أوريو,,مشروب مثلج غني بقطع بسكويت أوريو
+FRAPPE,STRAWBERRY,فرابيه فراولة,,مزيج مثلج منعش بنكهة الفراولة
+FRAPPE,CHEESECAKE,فرابيه تشيز كيك,,فرابيه بنكهة التشيز كيك الغنية
+FRAPPE,LOTUS,فرابيه لوتس,,فرابيه بنكهة بسكويت اللوتس والكراميل
+FRAPPE,PISTACHIO,فرابيه بستاشيو,,فرابيه مميز بنكهة الفستق الحلبي الطبيعي
+SWEETS,FONDANT,فوندان,,كيك الشوكولاتة الدافئ بقلب سائل يقدم مع الأيس كريم
+SWEETS,BROWNIES,براونيز,,قطع براونيز الشوكولاتة الغنية والمحشوة بالجوز
+SWEETS,ICE CREAM CAKE,كيك أيس كريم,,طبقات من الكيك والأيس كريم بنكهات متنوعة
+SWEETS,WAFFLE,وافل,,عجينة الوافل المقرمشة تقدم مع الصوصات والفواكه
+SWEETS,TIRAMISU,تيراميسو,,الحلوى الإيطالية الشهيرة بنكهة القهوة والماسكاربوني
+SWEETS,CHEESECAKE WAFFLE,وافل تشيز كيك,,وافل مغطى بطبقة من كريمة التشيز كيك اللذيذة
+SWEETS,KINDER FAKHARA,كيندر فخارة,,حلوى الكيندر المذابة في فخارة دافئة مع الكيك
+CUPS,CHOCOLATE,كاسات شوكولاتة,,كاسات طبقات من الشوكولاتة والكريمة
+CUPS,STRAWBERRY,كاسات فراولة,,كاسات حلوى بطعم الفراولة والكريمة
+CUPS,KINDER,كاسات كيندر,,كاسات مميزة بنكهة شوكولاتة كيندر
+CUPS,GALAXY,كاسات جالاكسي,,كاسات غنية بطعم شوكولاتة جالاكسي
+CUPS,CRUNCHY,كاسات كرانشي,,كاسات حلوى مع قطع مقرمشة وشوكولاتة
+CUPS,CHOCOLATE MOU,شوكولاتة مو,,حلوى الشوكولاتة الكريمية التقليدية الباردة
+NEW INS,L'OR CROISSANT,كرواسون لور,,كرواسون طازج بحشوات لور الخاصة والمبتكرة
+NEW INS,HALAWA CREAM,حلاوة بالقشطة,,مزيج تقليدي من الحلاوة والقشطة بلمسة عصرية
