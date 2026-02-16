@@ -10,7 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="manifest" href="manifest.json">
     <style>
-        /* Import Fonts */
+        /* استيراد الخطوط */
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
 
         :root {
@@ -29,7 +29,7 @@
             overflow-x: hidden;
         }
 
-        /* Animated Background */
+        /* الخلفية المتحركة */
         .animated-bg {
             position: fixed;
             top: 0;
@@ -49,31 +49,12 @@
             animation: move 20s infinite alternate ease-in-out;
         }
 
-        .blob-1 {
-            width: 600px;
-            height: 600px;
-            background: var(--brand-green);
-            top: -10%;
-            left: -10%;
-        }
-
-        .blob-2 {
-            width: 500px;
-            height: 500px;
-            background: var(--brand-gold);
-            bottom: -10%;
-            right: -10%;
-            animation-delay: -5s;
-        }
+        .blob-1 { width: 600px; height: 600px; background: var(--brand-green); top: -10%; left: -10%; }
+        .blob-2 { width: 500px; height: 500px; background: var(--brand-gold); bottom: -10%; right: -10%; animation-delay: -5s; }
 
         @keyframes move {
-            from {
-                transform: translate(0, 0) scale(1);
-            }
-
-            to {
-                transform: translate(100px, 50px) scale(1.1);
-            }
+            from { transform: translate(0, 0) scale(1); }
+            to { transform: translate(100px, 50px) scale(1.1); }
         }
 
         .glass-container {
@@ -83,7 +64,7 @@
             min-height: 100vh;
         }
 
-        /* Fixed Search Button */
+        /* زر البحث الثابت */
         .search-container {
             position: fixed;
             bottom: 30px;
@@ -109,15 +90,10 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
-        .search-wrapper.active {
-            width: 300px;
-            background: white;
-        }
+        .search-wrapper.active { width: 300px; background: white; }
 
         @media (max-width: 480px) {
-            .search-wrapper.active {
-                width: calc(100vw - 60px);
-            }
+            .search-wrapper.active { width: calc(100vw - 60px); }
         }
 
         .search-input {
@@ -134,10 +110,7 @@
             pointer-events: none;
         }
 
-        .search-wrapper.active .search-input {
-            opacity: 1;
-            pointer-events: auto;
-        }
+        .search-wrapper.active .search-input { opacity: 1; pointer-events: auto; }
 
         .search-icon-btn {
             position: absolute;
@@ -152,199 +125,152 @@
             border: none;
         }
 
-        /* Hero Section */
-        .hero-section {
-            position: relative;
-            padding: 20px 20px 60px;
+        /* --- بنر التثبيت الفاخر الجديد --- */
+        #installBanner {
+            position: fixed;
+            bottom: -150px; /* مخفي في البداية */
+            left: 0;
+            width: 100%;
+            z-index: 3000;
+            padding: 15px;
+            transition: bottom 0.8s cubic-bezier(0.16, 1, 0.3, 1);
             display: flex;
-            flex-direction: column;
+            justify-content: center;
+        }
+
+        #installBanner.show { bottom: 20px; }
+
+        .banner-content {
+            background: rgba(27, 48, 34, 0.9); /* اللون الأخضر للهوية مع شفافية */
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(197, 164, 126, 0.4);
+            border-radius: 25px;
+            width: 100%;
+            max-width: 450px;
+            padding: 18px;
+            display: flex;
             align-items: center;
-            text-align: center;
-            gap: 40px;
+            justify-content: space-between;
+            gap: 12px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
         }
 
-        @media (min-width: 768px) {
-            .hero-section {
-                flex-direction: row;
-                text-align: left;
-                justify-content: space-around;
-                padding: 40px 8% 100px;
-            }
+        .banner-info { display: flex; align-items: center; gap: 14px; }
+
+        .banner-logo-wrapper {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 15px;
+            padding: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
-        .hero-title {
-            font-size: 3rem;
-            font-weight: 700;
-            line-height: 1.1;
+        .banner-logo { width: 100%; height: 100%; border-radius: 12px; object-fit: cover; }
+
+        .banner-text h4 { color: white; font-weight: 800; font-size: 0.95rem; margin: 0; letter-spacing: 0.5px; }
+        .banner-text p { color: var(--brand-gold); font-size: 0.75rem; margin: 0; opacity: 0.9; font-weight: 500; }
+
+        .install-action-btn {
+            background: var(--brand-gold);
             color: var(--brand-green);
+            padding: 10px 22px;
+            border-radius: 15px;
+            font-weight: 900;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(197, 164, 126, 0.3);
         }
+        .install-action-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(197, 164, 126, 0.4); }
 
-        .hero-title span {
-            color: var(--brand-gold);
-        }
+        .close-banner { color: rgba(255,255,255,0.6); padding: 5px; transition: color 0.3s; }
+        .close-banner:hover { color: white; }
 
-        .hero-img-container {
-            position: relative;
-            width: 280px;
-            height: 280px;
+        /* الأقسام الأخرى */
+        .hero-section {
+            position: relative; padding: 20px 20px 60px;
+            display: flex; flex-direction: column; align-items: center; text-align: center; gap: 40px;
         }
 
         @media (min-width: 768px) {
-            .hero-img-container {
-                width: 480px;
-                height: 480px;
-            }
+            .hero-section { flex-direction: row; text-align: left; justify-content: space-around; padding: 40px 8% 100px; }
         }
+
+        .hero-title { font-size: 3rem; font-weight: 700; line-height: 1.1; color: var(--brand-green); }
+        .hero-title span { color: var(--brand-gold); }
+
+        .hero-img-container { position: relative; width: 280px; height: 280px; }
+        @media (min-width: 768px) { .hero-img-container { width: 480px; height: 480px; } }
 
         .hero-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 15px solid white;
-            box-shadow: 0 40px 80px rgba(27, 48, 34, 0.25);
-            z-index: 10;
-            position: relative;
+            width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
+            border: 15px solid white; box-shadow: 0 40px 80px rgba(27, 48, 34, 0.25);
+            z-index: 10; position: relative;
         }
 
         .hero-decor {
-            position: absolute;
-            top: -40px;
-            left: -40px;
-            width: 110%;
-            height: 110%;
-            background: var(--brand-gold);
-            border-radius: 50%;
-            z-index: 1;
-            opacity: 0.2;
-            filter: blur(20px);
+            position: absolute; top: -40px; left: -40px; width: 110%; height: 110%;
+            background: var(--brand-gold); border-radius: 50%; z-index: 1; opacity: 0.2; filter: blur(20px);
         }
 
-        /* Category Nav */
         .category-nav {
-            position: sticky;
-            top: 25px;
-            z-index: 100;
-            margin: 0 auto 60px;
-            display: flex;
-            justify-content: center;
-            padding: 8px;
-            max-width: 90vw;
-            background: rgba(255, 255, 255, 0.4);
-            backdrop-filter: blur(25px);
-            border-radius: 100px;
-            border: 1px solid rgba(255, 255, 255, 0.6);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            overflow: hidden;
+            position: sticky; top: 25px; z-index: 100; margin: 0 auto 60px;
+            display: flex; justify-content: center; padding: 8px; max-width: 90vw;
+            background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(25px);
+            border-radius: 100px; border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); overflow: hidden;
         }
 
         #category-bar {
-            display: flex;
-            gap: 10px;
-            overflow-x: auto;
-            white-space: nowrap;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-            padding: 2px 2px;
-            width: 100%;
-            justify-content: space-between;
+            display: flex; gap: 10px; overflow-x: auto; white-space: nowrap;
+            scrollbar-width: none; -ms-overflow-style: none; padding: 2px 2px;
+            width: 100%; justify-content: space-between;
         }
-
-        #category-bar::-webkit-scrollbar {
-            display: none;
-        }
+        #category-bar::-webkit-scrollbar { display: none; }
 
         .cat-btn {
-            padding: 12px 28px;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 1rem;
-            color: var(--brand-green);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            white-space: nowrap;
-            flex-shrink: 0;
+            padding: 12px 28px; border-radius: 50px; font-weight: 700; font-size: 1rem;
+            color: var(--brand-green); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            white-space: nowrap; flex-shrink: 0;
         }
 
         .cat-btn.active {
             background: linear-gradient(45deg, var(--brand-green), var(--brand-green2));
-            color: var(--brand-gold);
-            box-shadow: 0 8px 20px rgba(27, 48, 34, 0.2);
+            color: var(--brand-gold); box-shadow: 0 8px 20px rgba(27, 48, 34, 0.2);
         }
 
-        /* Menu Card Styles */
         .menu-card {
-            position: relative;
-            background: white;
-            border-radius: 35px;
-            padding: 100px 25px 35px;
-            text-align: center;
+            position: relative; background: white; border-radius: 35px;
+            padding: 100px 25px 35px; text-align: center;
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            border: 1px solid rgba(0, 0, 0, 0.03);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
-            margin-top: 80px;
+            border: 1px solid rgba(0, 0, 0, 0.03); display: flex;
+            flex-direction: column; align-items: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02); margin-top: 80px;
         }
-
-        .menu-card:hover {
-            transform: translateY(10px);
-            box-shadow: 0 30px 60px rgba(27, 48, 34, 0.1);
-        }
+        .menu-card:hover { transform: translateY(10px); box-shadow: 0 30px 60px rgba(27, 48, 34, 0.1); }
 
         .item-img-floating {
-            position: absolute;
-            top: -80px;
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 8px solid white;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-            z-index: 20;
-            background: white;
+            position: absolute; top: -80px; width: 160px; height: 160px;
+            border-radius: 50%; overflow: hidden; border: 8px solid white;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12); z-index: 20; background: white;
         }
-
-        .item-img-floating img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+        .item-img-floating img { width: 100%; height: 100%; object-fit: cover; }
 
         .price-label {
-            background: var(--brand-beige);
-            color: var(--brand-green);
-            font-weight: 800;
-            padding: 8px 25px;
-            border-radius: 50px;
-            margin-top: auto;
-            border: 1px solid rgba(197, 164, 126, 0.3);
-            font-size: 1.1rem;
+            background: var(--brand-beige); color: var(--brand-green); font-weight: 800;
+            padding: 8px 25px; border-radius: 50px; margin-top: auto;
+            border: 1px solid rgba(197, 164, 126, 0.3); font-size: 1.1rem;
         }
 
-        /* Footer */
-        footer {
-            background: linear-gradient(135deg, var(--brand-green), var(--brand-green2));
-            color: var(--brand-gold);
-            position: relative;
-            z-index: 10;
-        }
+        footer { background: linear-gradient(135deg, var(--brand-green), var(--brand-green2)); color: var(--brand-gold); position: relative; z-index: 10; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .fade-in { animation: fadeInUp 0.5s ease forwards; }
 
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in {
-            animation: fadeInUp 0.5s ease forwards;
-        }
+        @media (display-mode: standalone) { #installBanner { display: none !important; } }
     </style>
 </head>
 
@@ -358,20 +284,35 @@
     <!-- Search Button -->
     <div class="search-container">
         <div class="search-wrapper" id="searchWrapper" onclick="toggleSearch(event)">
-            <input type="text" id="searchInput" oninput="handleSearch()" placeholder="Search menu..."
-                class="search-input">
+            <input type="text" id="searchInput" oninput="handleSearch()" placeholder="Search menu..." class="search-input">
             <button class="search-icon-btn">
                 <svg class="h-8 w-8" style="stroke: #C5A47E" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                 </svg>
             </button>
         </div>
     </div>
 
-    <button id="installBtn" onclick="handleInstallClick()">
-        Install App 📲
-    </button>
+    <!-- Elegant Install Banner -->
+    <div id="installBanner">
+        <div class="banner-content">
+            <div class="banner-info">
+                <div class="banner-logo-wrapper">
+                    <img src="./images/logo.jpg" class="banner-logo" onerror="this.src='https://via.placeholder.com/50?text=LOR'">
+                </div>
+                <div class="banner-text">
+                    <h4>L'OR Digital Menu</h4>
+                    <p>Get the app for a faster experience</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <button class="install-action-btn" onclick="handleInstallClick()">Install</button>
+                <button class="close-banner" onclick="dismissInstallBanner()">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <div class="glass-container">
         <header class="p-8 flex flex-col items-center gap-2">
@@ -384,13 +325,9 @@
 
         <section class="hero-section">
             <div class="max-w-md">
-                <h1 class="hero-title mb-8">
-                    Authentic <span>Taste</span><br>
-                    Exquisite <span>Presentation</span>
-                </h1>
+                <h1 class="hero-title mb-8">Authentic <span>Taste</span><br>Exquisite <span>Presentation</span></h1>
                 <p class="text-gray-700 text-xl mb-10 leading-relaxed font-light">
-                    At L'OR, we craft exceptional experiences from the finest fresh ingredients, serving dishes that
-                    reflect our heritage and your refined taste.
+                    At L'OR, we craft exceptional experiences from the finest fresh ingredients, serving dishes that reflect our heritage and your refined taste.
                 </p>
                 <div class="flex gap-5 justify-center md:justify-start items-center">
                     <div class="h-[2px] w-24" style="background: var(--brand-green)"></div>
@@ -400,8 +337,7 @@
             </div>
             <div class="hero-img-container">
                 <div class="hero-decor"></div>
-                <img src="./images/Banner.jpg" class="hero-img shadow-2xl"
-                    onerror="this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800'">
+                <img src="./images/Banner.jpg" class="hero-img shadow-2xl" onerror="this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800'">
             </div>
         </section>
 
@@ -418,27 +354,17 @@
                 <div>
                     <img src="./images/L'OR Transparent.png" class="h-20 mx-auto md:mx-0 mb-6 opacity-80">
                     <h3 class="text-xl font-bold mb-4">L'OR Cafe & Restaurant</h3>
-                    <p class="text-sm leading-relaxed opacity-70">We are proud to offer a luxurious dining experience
-                        that combines authenticity and modernity.</p>
+                    <p class="text-sm leading-relaxed opacity-70">We are proud to offer a luxurious dining experience that combines authenticity and modernity.</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-6 pb-2 border-b border-white/20 inline-block">Contact Us</h3>
                     <ul class="space-y-4 text-sm opacity-80 font-medium">
                         <li class="flex items-center justify-center md:justify-start gap-3">
-                            <svg class="w-5 h-5" style="stroke: #C5A47E" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                            </svg>
+                            <svg class="w-5 h-5" style="stroke: #C5A47E" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                             <span>+963 990 342 472</span>
                         </li>
                         <li class="flex items-center justify-center md:justify-start gap-3 text-left">
-                            <svg class="w-5 h-5" style="stroke: #C5A47E" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                            </svg>
+                            <svg class="w-5 h-5" style="stroke: #C5A47E" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                             <span>Aleppo, Al-Aziziyah District</span>
                         </li>
                     </ul>
@@ -446,68 +372,74 @@
                 <div>
                     <h3 class="text-xl font-bold mb-6 pb-2 border-b border-white/20 inline-block">Follow Us</h3>
                     <div class="flex justify-center md:justify-start gap-6">
-                        <a href="#"><svg class="w-8 h-8" style="fill: #C5A47E" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z" />
-                            </svg></a>
-                        <a href="#"><svg class="w-8 h-8" style="fill: #C5A47E" viewBox="0 0 24 24">
-                                <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10z" />
-                            </svg></a>
+                        <a href="#"><svg class="w-8 h-8" style="fill: #C5A47E" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></a>
+                        <a href="#"><svg class="w-8 h-8" style="fill: #C5A47E" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10z"/></svg></a>
                     </div>
                 </div>
             </div>
-            <div
-                class="mt-16 pt-8 border-t border-white/5 text-center text-[10px] opacity-30 uppercase tracking-[0.3em]">
+            <div class="mt-16 pt-8 border-t border-white/5 text-center text-[10px] opacity-30 uppercase tracking-[0.3em]">
                 &copy; 2026 L'OR Digital Menu | DotTech Solutions
             </div>
         </footer>
     </div>
 
     <script>
+        // تحديد العناصر بعد تحميل الصفحة
         let deferredPrompt;
-        const installBtn = document.getElementById('installBtn');
+        let installBanner;
+
+        window.addEventListener('DOMContentLoaded', () => {
+            installBanner = document.getElementById('installBanner');
+            
+            // ميزة للمطور: إظهار البنر يدوياً للمعاينة إذا كنت تجرب الكود الآن
+            // سنقوم بإظهاره بعد 3 ثوانٍ فقط لتتمكن من رؤية التصميم
+            setTimeout(() => {
+               if (!window.matchMedia('(display-mode: standalone)').matches) {
+                   installBanner.classList.add('show');
+               }
+            }, 3000);
+        });
+
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        const isInstalled = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone;
 
         window.addEventListener('beforeinstallprompt', (e) => {
-            // Prevent Chrome 67 and earlier from automatically showing the prompt
             e.preventDefault();
-            // Stash the event so it can be triggered later.
             deferredPrompt = e;
-            // Update UI notify the user they can install the PWA
-            installBtn.style.display = 'block';
+            // في الواقع، سيظهر البنر عندما يقرر المتصفح ذلك
+            if (!isInstalled && isMobile) {
+                installBanner.classList.add('show');
+            }
         });
 
         function handleInstallClick() {
-            if (!deferredPrompt) return;
-            // Hide our custom button
-            installBtn.style.display = 'none';
-            // Show the prompt
+            if (!deferredPrompt) {
+                // إذا لم يكن الحدث متاحاً بعد، نخبر المستخدم بطريقة يدوية بسيطة
+                alert("To install: Tap the browser menu (three dots or share icon) and select 'Add to Home Screen'");
+                return;
+            }
+            installBanner.classList.remove('show');
             deferredPrompt.prompt();
-            // Wait for the user to respond to the prompt
             deferredPrompt.userChoice.then((choiceResult) => {
-                if (choiceResult.outcome === 'accepted') {
-                    console.log('User accepted the A2HS prompt');
-                } else {
-                    console.log('User dismissed the A2HS prompt');
-                }
                 deferredPrompt = null;
             });
         }
 
-        // Check if already installed
+        function dismissInstallBanner() {
+            installBanner.classList.remove('show');
+        }
+
         window.addEventListener('appinstalled', (evt) => {
-            console.log('L\'OR App was installed.');
-            installBtn.style.display = 'none';
+            installBanner.classList.remove('show');
         });
 
-        // Register Service Worker
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js')
-                    .then(reg => console.log('SW Registered'))
-                    .catch(err => console.log('SW Reg Failed', err));
+                navigator.serviceWorker.register('./sw.js').catch(err => console.error(err));
             });
         }
 
+        // منطق المنيو والبيانات
         let fullMenu = [];
         let currentCategory = "";
         const SHEET_URL = './menu.csv';
@@ -575,7 +507,8 @@
         function switchCategory(cat) {
             currentCategory = cat;
             document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
-            document.getElementById(`btn-${cat}`)?.classList.add('active');
+            const activeBtn = document.getElementById(`btn-${cat}`);
+            if (activeBtn) activeBtn.classList.add('active');
             const filtered = fullMenu.filter(item => item['Main Category'] === cat);
             renderMenu(filtered);
         }
