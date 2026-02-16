@@ -1,106 +1,19 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <!-- <link rel="icon" type="image/jpg" href="./images/logo.jpg"> -->
-    <title>L'OR | المنيو الرقمي الفاخر</title>
+    <link rel="icon" type="image/jpg" href="./images/logo.jpg">
+    <title>L'OR | Luxury Digital Menu</title>
     <!-- Tailwind CSS -->
-    <script src="./tailwind.min.css"></script>
-    <!-- Premium Arabic Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="manifest" href="manifest.json">
     <style>
-        /* cairo-200 - arabic_latin_latin-ext */
-        @font-face {
-            font-display: swap;
-            /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-            font-family: 'Cairo';
-            font-style: normal;
-            font-weight: 200;
-            src: url('./fonts/cairo-v31-arabic_latin_latin-ext-200.woff2') format('woff2');
-            /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        }
-
-        /* cairo-300 - arabic_latin_latin-ext */
-        @font-face {
-            font-display: swap;
-            /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-            font-family: 'Cairo';
-            font-style: normal;
-            font-weight: 300;
-            src: url('./fonts/cairo-v31-arabic_latin_latin-ext-300.woff2') format('woff2');
-            /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        }
-
-        /* cairo-regular - arabic_latin_latin-ext */
-        @font-face {
-            font-display: swap;
-            /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-            font-family: 'Cairo';
-            font-style: normal;
-            font-weight: 400;
-            src: url('./fonts/cairo-v31-arabic_latin_latin-ext-regular.woff2') format('woff2');
-            /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        }
-
-        /* cairo-500 - arabic_latin_latin-ext */
-        @font-face {
-            font-display: swap;
-            /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-            font-family: 'Cairo';
-            font-style: normal;
-            font-weight: 500;
-            src: url('./fonts/cairo-v31-arabic_latin_latin-ext-500.woff2') format('woff2');
-            /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        }
-
-        /* cairo-600 - arabic_latin_latin-ext */
-        @font-face {
-            font-display: swap;
-            /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-            font-family: 'Cairo';
-            font-style: normal;
-            font-weight: 600;
-            src: url('./fonts/cairo-v31-arabic_latin_latin-ext-600.woff2') format('woff2');
-            /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        }
-
-        /* cairo-700 - arabic_latin_latin-ext */
-        @font-face {
-            font-display: swap;
-            /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-            font-family: 'Cairo';
-            font-style: normal;
-            font-weight: 700;
-            src: url('./fonts/cairo-v31-arabic_latin_latin-ext-700.woff2') format('woff2');
-            /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        }
-
-        /* cairo-800 - arabic_latin_latin-ext */
-        @font-face {
-            font-display: swap;
-            /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-            font-family: 'Cairo';
-            font-style: normal;
-            font-weight: 800;
-            src: url('./fonts/cairo-v31-arabic_latin_latin-ext-800.woff2') format('woff2');
-            /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        }
-
-        /* cairo-900 - arabic_latin_latin-ext */
-        @font-face {
-            font-display: swap;
-            /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-            font-family: 'Cairo';
-            font-style: normal;
-            font-weight: 900;
-            src: url('./fonts/cairo-v31-arabic_latin_latin-ext-900.woff2') format('woff2');
-            /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        }
-
+        /* Import Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
 
         :root {
-            /* ألوان الهوية البصرية المستخرجة من الشعار */
             --brand-green: #1B3022;
             --brand-green2: #2f4e3a;
             --brand-gold: #C5A47E;
@@ -116,7 +29,7 @@
             overflow-x: hidden;
         }
 
-        /* الخلفية المتحركة بألوان الهوية */
+        /* Animated Background */
         .animated-bg {
             position: fixed;
             top: 0;
@@ -132,65 +45,98 @@
             position: absolute;
             border-radius: 50%;
             filter: blur(100px);
-            opacity: 0.5;
-            /* زيادة الكثافة لتعزيز البعد */
+            opacity: 0.4;
             animation: move 20s infinite alternate ease-in-out;
         }
 
-        .blob-1 {
-            width: 700px;
-            height: 700px;
-            background: var(--brand-green);
-            top: -20%;
-            left: -15%;
-        }
-
-        .blob-2 {
-            width: 600px;
-            height: 600px;
-            background: var(--brand-gold);
-            bottom: -15%;
-            right: -10%;
-            animation-delay: -5s;
-        }
-
-        .blob-3 {
-            width: 500px;
-            height: 500px;
-            background: var(--brand-beige);
-            top: 35%;
-            left: 15%;
-            animation-delay: -10s;
-        }
+        .blob-1 { width: 600px; height: 600px; background: var(--brand-green); top: -10%; left: -10%; }
+        .blob-2 { width: 500px; height: 500px; background: var(--brand-gold); bottom: -10%; right: -10%; animation-delay: -5s; }
 
         @keyframes move {
-            from {
-                transform: translate(0, 0) rotate(0deg) scale(1);
-            }
-
-            to {
-                transform: translate(120px, 80px) rotate(30deg) scale(1.15);
-            }
+            from { transform: translate(0, 0) scale(1); }
+            to { transform: translate(100px, 50px) scale(1.1); }
         }
 
-        /* الحاوية الزجاجية المطورة ببعد أعمق */
         .glass-container {
-            backdrop-filter: blur(45px) saturate(180%);
-            -webkit-backdrop-filter: blur(45px) saturate(180%);
-            background: rgba(250, 249, 246, 0.45);
-            /* تقليل التغطية لزيادة الشفافية */
+            backdrop-filter: blur(20px) saturate(160%);
+            -webkit-backdrop-filter: blur(20px) saturate(160%);
+            background: rgba(250, 249, 246, 0.7);
             min-height: 100vh;
-            position: relative;
-            z-index: 1;
-            box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.2);
-            border-left: 1px solid rgba(255, 255, 255, 0.3);
-            border-right: 1px solid rgba(255, 255, 255, 0.3);
         }
 
-        /* تصميم الهيرو */
+        /* Fixed Search Button */
+        .search-container {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 2000;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .search-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background: var(--brand-green);
+            border: 1px solid var(--brand-gold);
+            border-radius: 50px;
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .search-wrapper.active {
+            width: 300px;
+            background: white;
+        }
+
+        @media (max-width: 480px) {
+            .search-wrapper.active {
+                width: calc(100vw - 60px);
+            }
+        }
+
+        .search-input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: transparent;
+            padding: 0 60px 0 25px;
+            font-weight: bold;
+            color: var(--brand-green);
+            outline: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        .search-wrapper.active .search-input {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .search-icon-btn {
+            position: absolute;
+            right: 0;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--brand-gold);
+            background: transparent;
+            border: none;
+        }
+
+        /* Hero Section */
         .hero-section {
             position: relative;
-            padding: 60px 20px;
+            padding: 20px 20px 60px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -201,9 +147,9 @@
         @media (min-width: 768px) {
             .hero-section {
                 flex-direction: row;
-                text-align: right;
+                text-align: left;
                 justify-content: space-around;
-                padding: 100px 8%;
+                padding: 40px 8% 100px;
             }
         }
 
@@ -212,12 +158,9 @@
             font-weight: 700;
             line-height: 1.1;
             color: var(--brand-green);
-            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
         }
 
-        .hero-title span {
-            color: var(--brand-gold);
-        }
+        .hero-title span { color: var(--brand-gold); }
 
         .hero-img-container {
             position: relative;
@@ -226,10 +169,7 @@
         }
 
         @media (min-width: 768px) {
-            .hero-img-container {
-                width: 480px;
-                height: 480px;
-            }
+            .hero-img-container { width: 480px; height: 480px; }
         }
 
         .hero-img {
@@ -246,7 +186,7 @@
         .hero-decor {
             position: absolute;
             top: -40px;
-            right: -40px;
+            left: -40px;
             width: 110%;
             height: 110%;
             background: var(--brand-gold);
@@ -256,46 +196,7 @@
             filter: blur(20px);
         }
 
-        /* كروت المنيو الفاخرة */
-        .menu-card {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            border-radius: 50px;
-            padding: 50px 30px;
-            text-align: center;
-            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            box-shadow: 0 15px 35px rgba(27, 48, 34, 0.05);
-        }
-
-        .menu-card:hover {
-            transform: translateY(-25px) scale(1.03);
-            background: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 45px 90px rgba(27, 48, 34, 0.2);
-            border-color: var(--brand-gold);
-        }
-
-        .item-img-circle {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 10px solid white;
-            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.1);
-            margin-bottom: 35px;
-            position: relative;
-        }
-
-        .item-img-circle img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* شريط التصنيفات المطور */
+        /* Category Nav */
         .category-nav {
             position: sticky;
             top: 25px;
@@ -305,14 +206,12 @@
             justify-content: center;
             padding: 8px;
             max-width: 90vw;
-            /* تقصير طول الشريط */
             background: rgba(255, 255, 255, 0.4);
             backdrop-filter: blur(25px);
             border-radius: 100px;
             border: 1px solid rgba(255, 255, 255, 0.6);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             overflow: hidden;
-            /* لضمان عدم خروج العناصر */
         }
 
         #category-bar {
@@ -320,28 +219,14 @@
             gap: 10px;
             overflow-x: auto;
             white-space: nowrap;
-            /* منع العناوين من النزول لسطر جديد */
             scrollbar-width: none;
-            /* لإخفاء السكرول في فيرفوكس */
             -ms-overflow-style: none;
-            /* لإخفاء السكرول في IE */
             padding: 2px 2px;
             width: 100%;
             justify-content: space-between;
-            /* تمركز الأزرار إذا كانت قليلة */
         }
 
-        #category-bar::-webkit-scrollbar {
-            display: none;
-            /* إخفاء شريط التمرير في كروم وسافاري */
-        }
-
-        /* تأكيد التمركز في الموبايل إذا كان المحتوى طويلاً */
-        @media (max-width: 768px) {
-            #category-bar {
-                justify-content: flex-start;
-            }
-        }
+        #category-bar::-webkit-scrollbar { display: none; }
 
         .cat-btn {
             padding: 12px 28px;
@@ -351,82 +236,121 @@
             color: var(--brand-green);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             white-space: nowrap;
-            /* منع انقسام النص */
             flex-shrink: 0;
-            /* منع تصغير الأزرار */
         }
 
         .cat-btn.active {
             background: linear-gradient(45deg, var(--brand-green), var(--brand-green2));
             color: var(--brand-gold);
+            box-shadow: 0 8px 20px rgba(27, 48, 34, 0.2);
         }
 
-        .price-tag {
+        /* Menu Card Styles */
+        .menu-card {
+            position: relative;
+            background: white;
+            border-radius: 35px;
+            padding: 100px 25px 35px;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            border: 1px solid rgba(0,0,0,0.03);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+            margin-top: 80px;
+        }
+
+        .menu-card:hover {
+            transform: translateY(10px);
+            box-shadow: 0 30px 60px rgba(27, 48, 34, 0.1);
+        }
+
+        .item-img-floating {
+            position: absolute;
+            top: -80px;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 8px solid white;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+            z-index: 20;
+            background: white;
+        }
+
+        .item-img-floating img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .price-label {
             background: var(--brand-beige);
             color: var(--brand-green);
-            font-weight: 900;
-            font-size: 1.2rem;
-            margin-top: 25px;
+            font-weight: 800;
             padding: 8px 25px;
-            border-radius: 100px;
-            border: 1px solid rgba(197, 164, 126, 0.4);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            border-radius: 50px;
+            margin-top: auto;
+            border: 1px solid rgba(197, 164, 126, 0.3);
+            font-size: 1.1rem;
         }
 
+        /* Footer */
         footer {
-            background: linear-gradient(45deg, var(--brand-green), var(--brand-green2));
+            background: linear-gradient(135deg, var(--brand-green), var(--brand-green2));
             color: var(--brand-gold);
             position: relative;
             z-index: 10;
         }
 
-        /* تخصيص السكرول العام */
-        ::-webkit-scrollbar {
-            width: 6px;
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        ::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: var(--brand-gold);
-            border-radius: 10px;
-        }
+        .fade-in { animation: fadeInUp 0.5s ease forwards; }
     </style>
 </head>
 
 <body>
 
-    <!-- الخلفية المتحركة بألوان الهوية -->
     <div class="animated-bg">
         <div class="blob blob-1"></div>
         <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
     </div>
 
-    <!-- الحاوية الزجاجية -->
-    <div class="glass-container">
+    <!-- Search Button -->
+    <div class="search-container">
+        <div class="search-wrapper" id="searchWrapper" onclick="toggleSearch(event)">
+            <input type="text" id="searchInput" oninput="handleSearch()" 
+                   placeholder="Search menu..." 
+                   class="search-input">
+            <button class="search-icon-btn">
+                <svg class="h-8 w-8" style="stroke: #C5A47E" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
 
-        <!-- Header - تم إضافة نص Cafe & Restaurant أسفل الشعار -->
-        <header class="p-8 flex flex-col justify-center items-center gap-2">
-            <div class="flex items-center">
-                <img src="./images/L'OR Transparent.png" class="h-24 w-24 md:h-32 md:w-32">
+    <div class="glass-container">
+        <header class="p-8 flex flex-col items-center gap-2">
+            <img src="./images/L'OR Transparent.png" class="h-24 md:h-32" onerror="this.src='./images/logo.jpg'">
+            <div class="text-center">
+                <h1 class="text-2xl font-black tracking-widest text-[#1B3022]">L'OR CAFE</h1>
+                <p class="text-[10px] tracking-[0.3em] uppercase opacity-60 font-bold">Luxury Dining Experience</p>
             </div>
-            <span class="text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase opacity-80 text-center"
-                style="color: var(--brand-green)">Cafe & Restaurant</span>
         </header>
 
-        <!-- Hero Section -->
         <section class="hero-section">
             <div class="max-w-md">
                 <h1 class="hero-title mb-8">
-                    أصالة <span>المذاق</span><br>
-                    وفخامة <span>التقديم</span>
+                    Authentic <span>Taste</span><br>
+                    Exquisite <span>Presentation</span>
                 </h1>
                 <p class="text-gray-700 text-xl mb-10 leading-relaxed font-light">
-                    نحن في لور نصنع تجارب استثنائية من أجود المكونات الطازجة، لتقديم أطباق تعكس هويتنا العريقة وذوقكم
-                    الرفيع.
+                    At L'OR, we craft exceptional experiences from the finest fresh ingredients, serving dishes that reflect our heritage and your refined taste.
                 </p>
                 <div class="flex gap-5 justify-center md:justify-start items-center">
                     <div class="h-[2px] w-24" style="background: var(--brand-green)"></div>
@@ -441,73 +365,94 @@
             </div>
         </section>
 
-        <!-- Navigation Tabs -->
         <nav class="category-nav">
-            <div id="category-bar">
-                <!-- سيتم إنشاؤها عبر JavaScript -->
-            </div>
+            <div id="category-bar"></div>
         </nav>
 
-        <!-- Menu Content -->
-        <main class="max-w-7xl mx-auto px-6 py-12">
-            <div id="menu-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 pb-32">
-                <!-- الأصناف المختارة ستظهر هنا -->
-            </div>
+        <main class="max-w-7xl mx-auto px-6 pb-32">
+            <div id="menu-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-24"></div>
         </main>
 
-        <!-- Footer -->
-        <footer class="py-10 text-center">
-            <div class="max-w-4xl mx-auto px-6">
-                <img src="./images/L'OR Transparent.png" class="h-24 w-24 mx-auto mb-8">
-                <h2 class="text-2xl font-black mb-4">Cafe & Restaurant</h2>
-                <p class="text-sm opacity-60 max-w-md mx-auto leading-relaxed">
-                    نسعد باستقبالكم في فروعنا لنقدم لكم أرقى الخدمات وألذ الأطباق العالمية والمحلية في أجواء مفعمة
-                    بالفخامة.
-                </p>
-                <div class="mt-10 pt-10 border-t border-white/10 text-[10px] uppercase tracking-[0.3em] opacity-40">
-                    &copy; 2026 All Rights Reserved | DotTech Solutions
+        <footer class="pt-20 pb-10">
+            <div class="max-w-6xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+                <div>
+                    <img src="./images/L'OR Transparent.png" class="h-20 mx-auto md:mx-0 mb-6 opacity-80">
+                    <h3 class="text-xl font-bold mb-4">L'OR Cafe & Restaurant</h3>
+                    <p class="text-sm leading-relaxed opacity-70">We are proud to offer a luxurious dining experience that combines authenticity and modernity.</p>
                 </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-white/20 inline-block">Contact Us</h3>
+                    <ul class="space-y-4 text-sm opacity-80 font-medium">
+                        <li class="flex items-center justify-center md:justify-start gap-3">
+                            <svg class="w-5 h-5" style="stroke: #C5A47E" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                            <span>+963 990 342 472</span>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start gap-3 text-left">
+                            <svg class="w-5 h-5" style="stroke: #C5A47E" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            <span>Aleppo, Al-Aziziyah District</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-6 pb-2 border-b border-white/20 inline-block">Follow Us</h3>
+                    <div class="flex justify-center md:justify-start gap-6">
+                        <a href="#"><svg class="w-8 h-8" style="fill: #C5A47E" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></a>
+                        <a href="#"><svg class="w-8 h-8" style="fill: #C5A47E" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 pt-8 border-t border-white/5 text-center text-[10px] opacity-30 uppercase tracking-[0.3em]">
+                &copy; 2026 L'OR Digital Menu | DotTech Solutions
             </div>
         </footer>
     </div>
 
     <script>
-        let menuData = {};
+        // Register Service Worker for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('SW Registered'))
+                    .catch(err => console.log('SW Reg Failed', err));
+            });
+        }
 
-        async function initApp() {
+        let fullMenu = [];
+        let currentCategory = "";
+        const SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTeXVDb1-48oVHCEROAlwrFC3EF-NYgRfu0aekTOLYr0wP_hvbLiOGfnxSmAIvvWy3rQ7IFZg2EmLLX/pub?gid=0&single=true&output=csv';
+
+        async function init() {
+            const cachedData = localStorage.getItem('lor_menu_cache');
+            if (cachedData) {
+                try {
+                    fullMenu = JSON.parse(cachedData);
+                    renderUI();
+                } catch (e) { localStorage.removeItem('lor_menu_cache'); }
+            }
+
             try {
-                const response = await fetch('./menu.csv');
-                if (!response.ok) throw new Error('CSV not found');
-                const csvText = await response.text();
-
-                const menuItems = parseCSV(csvText);
-                menuData = menuItems.reduce((acc, item) => {
-                    const cat = item['Main Category'];
-                    if (!acc[cat]) acc[cat] = [];
-                    acc[cat].push(item);
-                    return acc;
-                }, {});
-
-                const categories = Object.keys(menuData);
-                if (categories.length === 0) return;
-
-                const navBar = document.getElementById('category-bar');
-                navBar.innerHTML = categories.map(cat => `
-                    <button onclick="switchCategory('${cat}')" id="cat-${cat}" class="cat-btn">
-                        ${cat}
-                    </button>
-                `).join('');
-
-                switchCategory(categories[0]);
-            } catch (err) {
-                console.error("خطأ:", err);
-                document.getElementById('menu-grid').innerHTML = '<p class="text-center col-span-full py-20 text-gray-500">يرجى التأكد من وجود ملف menu.csv في مجلد المشروع.</p>';
+                const response = await fetch(SHEET_URL);
+                if (!response.ok) throw new Error('Network error');
+                const data = await response.text();
+                fullMenu = parseCSV(data);
+                localStorage.setItem('lor_menu_cache', JSON.stringify(fullMenu));
+                renderUI();
+            } catch (error) {
+                if (fullMenu.length === 0) {
+                    document.getElementById('menu-grid').innerHTML = `<p class='col-span-full text-center py-20 opacity-50 font-bold'>Offline. No cached data found.</p>`;
+                }
             }
         }
 
+        function renderUI() {
+            renderCategories();
+            const categories = Object.keys(groupByCategory(fullMenu));
+            if (categories.length > 0 && !currentCategory) switchCategory(categories[0]);
+            else if (currentCategory) switchCategory(currentCategory);
+        }
+
         function parseCSV(text) {
-            const rows = text.split('\n').filter(row => row.trim() !== '');
-            if (rows.length === 0) return [];
+            const rows = text.split('\n').filter(r => r.trim());
             const headers = rows[0].split(',').map(h => h.trim());
             return rows.slice(1).map(row => {
                 const values = row.split(',').map(v => v.trim());
@@ -517,45 +462,89 @@
             });
         }
 
-        function switchCategory(catName) {
-            document.querySelectorAll('.cat-btn').forEach(btn => btn.classList.remove('active'));
-            const activeBtn = document.getElementById(`cat-${catName}`);
-            if (activeBtn) {
-                activeBtn.classList.add('active');
-                // ميزة ذكية: سحب الزر للمركز عند الضغط عليه في الموبايل
-                activeBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-            }
+        function groupByCategory(items) {
+            return items.reduce((acc, item) => {
+                const cat = item['Main Category'] || "Other";
+                if (!acc[cat]) acc[cat] = [];
+                acc[cat].push(item);
+                return acc;
+            }, {});
+        }
 
+        function renderCategories() {
+            const categories = Object.keys(groupByCategory(fullMenu));
+            const bar = document.getElementById('category-bar');
+            bar.innerHTML = categories.map(cat => `
+                <button onclick="switchCategory('${cat}')" id="btn-${cat}" class="cat-btn">
+                    ${cat}
+                </button>
+            `).join('');
+        }
+
+        function switchCategory(cat) {
+            currentCategory = cat;
+            document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(`btn-${cat}`)?.classList.add('active');
+            const filtered = fullMenu.filter(item => item['Main Category'] === cat);
+            renderMenu(filtered);
+        }
+
+        function toggleSearch(event) {
+            const wrapper = document.getElementById('searchWrapper');
+            const input = document.getElementById('searchInput');
+            if (!wrapper.classList.contains('active')) {
+                wrapper.classList.add('active');
+                input.focus();
+                event.stopPropagation();
+            }
+        }
+
+        document.addEventListener('click', (event) => {
+            const wrapper = document.getElementById('searchWrapper');
+            const input = document.getElementById('searchInput');
+            if (wrapper.classList.contains('active') && !wrapper.contains(event.target)) {
+                wrapper.classList.remove('active');
+                if (input.value === "") switchCategory(currentCategory);
+            }
+        });
+
+        function handleSearch() {
+            const term = document.getElementById('searchInput').value.toLowerCase();
+            if (!term) { if (currentCategory) switchCategory(currentCategory); return; }
+            const results = fullMenu.filter(item => {
+                const nameEN = (item['Item Name'] || "").toLowerCase();
+                const nameAR = (item['Item Name AR'] || item['Arabic Name'] || "").toLowerCase();
+                const desc = (item['Description'] || "").toLowerCase();
+                return nameEN.includes(term) || nameAR.includes(term) || desc.includes(term);
+            });
+            renderMenu(results);
+        }
+
+        function renderMenu(items) {
             const grid = document.getElementById('menu-grid');
-            grid.innerHTML = menuData[catName].map((item, idx) => {
-                const imageName = item['Item Name'] ? item['Item Name'].trim().replace(/\s+/g, '_') : 'placeholder';
+            if (items.length === 0) {
+                grid.innerHTML = `<p class="col-span-full text-center py-20 opacity-40 font-bold">No results found..</p>`;
+                return;
+            }
+            grid.innerHTML = items.map((item, index) => {
+                const imageName = item['Item Name'] ? item['Item Name'].trim().replace(/\s+/g, '_') : 'logo';
+                const arabicName = item['Item Name AR'] || item['Arabic Name'] || 'Luxury Dish';
                 return `
-                    <div class="menu-card" style="animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards ${idx * 0.12}s; opacity: 0;">
-                        <div class="item-img-circle">
-                            <img src="./images/menu/${imageName}.jpg" onerror="this.src='./images/logo.jpg'">
-                        </div>
-                        <h3 class="text-2xl font-black mb-4" style="color: var(--brand-green)">${item['Item Name']}</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed px-6 line-clamp-3 font-medium">
-                            ${item['Description'] || 'وصف فاخر لهذا الصنف المختار بعناية من قائمة لور الخاصة.'}
-                        </p>
-                        <div class="price-tag">${item['Price']}</div>
+                <div class="menu-card fade-in" style="animation-delay: ${index * 0.08}s">
+                    <div class="item-img-floating">
+                        <img src="./images/menu/${imageName}.jpg" onerror="this.src='./images/logo.jpg'">
                     </div>
+                    <h3 class="text-xl font-bold text-[var(--brand-green)] mb-1">${item['Item Name']}</h3>
+                    <h4 class="text-lg font-black text-[var(--brand-gold)] mb-4">${arabicName}</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-3 font-medium">
+                        ${item['Description'] || 'A delicious and carefully selected dish from L\'OR special menu.'}
+                    </p>
+                    <div class="price-label">${item['Price']}</div>
+                </div>
                 `;
             }).join('');
         }
-
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes fadeInUp {
-                from { opacity: 0; transform: translateY(40px); }
-                to { opacity: 1; transform: translateY(0); }
-            }
-        `;
-        document.head.appendChild(style);
-
-        window.addEventListener('DOMContentLoaded', initApp);
+        window.onload = init;
     </script>
 </body>
-
-
 </html>

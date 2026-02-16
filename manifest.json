@@ -1,22 +1,24 @@
 {
 "name": "L'OR Cafe & Restaurant",
-"short_name": "L'OR",
-"description": "A professional tablet menu system for L'OR Restaurant and Cafe that works without internet.",
+"short_name": "L'OR Menu",
+"description": "Luxury Digital Menu for L'OR Cafe & Restaurant",
 "start_url": "./index.html",
-"display": "fullscreen",
-"background_color": "#F2E8CF",
+"display": "standalone",
+"background_color": "#FAF9F6",
 "theme_color": "#1B3022",
-"orientation": "landscape",
+"orientation": "portrait",
 "icons": [
 {
 "src": "./images/logo.jpg",
 "sizes": "192x192",
-"type": "image/jpeg"
+"type": "image/jpg",
+"purpose": "any maskable"
 },
 {
 "src": "./images/logo.jpg",
 "sizes": "512x512",
-"type": "image/jpeg"
+"type": "image/jpg",
+"purpose": "any maskable"
 }
 ]
 }
