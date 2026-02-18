@@ -1,4 +1,4 @@
-# Restaurant Premium Digital Menu Showcase
+# L'OR Cafe & Restaurant Digital Menu
 
 A high-end, ultra-modern digital menu application custom-built for Restaurant Cafe & Restaurant. This showcase application is designed to provide a luxury visual experience for customers browsing on tablets or mobile devices, featuring sophisticated UI patterns and a fluid, brand-centric interface.
 
